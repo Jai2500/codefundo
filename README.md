@@ -22,4 +22,4 @@ The drone of our choice is the DJI M200 Series Quadcopters (specifically the M21
 ##### The Basic Working Model of the drone
 
 1. Each drone is connected to either the previous drone or more drones through a mesh network to FANET System. 
-2. Each drone is assigned a circular region, the radius of which is given by $R = X - r$.
+2. Each drone is assigned a circular region, the radius of which is given by ![Eq of radius](http://latex.codecogs.com/gif.latex?R%20%3D%20X%20-%20r)
