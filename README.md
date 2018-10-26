@@ -33,7 +33,52 @@ The drone of our choice is the DJI M200 Series Quadcopters (specifically the M21
 
 __Code for the latitude and longitude generation__
 
-// Enter the code for Latitude and Longitude Generation.
+```python
+import random
+
+#Base Latitude and Longitude
+baseLatitude = 0.0 
+baseLongitude = 0.0 
+baseAltitude = 0.200
+
+#Maximum range of the Wi-fi dongle on the drone
+maxRange = 3.0
+
+#Maximum deviation from center for the drone
+maxDev = 1.0
+
+def newLatitude(oldLat, distance):
+
+	#using the formula 1 deg ~ 110.574km
+	degreeChange = distance/110.574
+	newLat = oldLat + degreeChange
+	return newLat
+
+def newLocation(oldLat, oldLong, oldAlt):
+
+	#to calculate new center of drone
+	newDistance = maxRange - (2 * maxDev)
+
+	#the drone travels in a geodesic
+	#ie. only the latitude or the longitude changes
+	newLat = newLatitude(oldLat,newDistance);
+
+	with open ("locations.txt", "w") as fwrite:
+
+		fwrite.write(str(newLat)+' '+str(oldLat)+' '+str(oldAlt)+ ' ')
+
+	oldLat = newLat
+
+	for i in range(10):
+		newDistance = random.random()*maxDev
+		newLat = newLatitude(oldLat,newDistance)
+
+		with open ("locations.txt", "w") as fwrite:
+			fwrite.write(str(newLat)+' '+str(oldLat)+' '+str(oldAlt)+' ')
+
+		oldLat = newLat
+		
+  ```
 
 
 __Code for the Waypoint Setting and Controlling the Drone__ 
