@@ -37,4 +37,4 @@ __Code for the Waypoint Setting and Controlling the Drone__
 
 A basic implementation of the algorithm for waypoint was done in __C++__. Due to sheer size and quantity of files, only the *most* important files have been uploaded. The other files are assumed to be understood. 
 
-Link : https://1drv.ms/f/s!Am8mfksK8R_6gQY6ujGGNK6M3i8y - automatic!
+Link : [C++ Files ]https://1drv.ms/f/s!Am8mfksK8R_6gQY6ujGGNK6M3i8y
