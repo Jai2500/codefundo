@@ -16,8 +16,10 @@ The drone of our choice is the DJI M200 Series Quadcopters (specifically the M21
 * Inbuilt GPS Support
 * Autonomous Flight support (even when it is out of the range of the manual RC).
 * Support for the Onboard SDK (the one used), along with the support for Mobile SDK.
-* Fairly sufficent Payload capability. 
+* Fairly sufficent Payload capability, and support for various other modules. 
 * The camera module Zenmuse Z30 was specically chosen due to its support for very high zoom capability, which is perfect for high altitude flight as well low altitude flight. 
+
+![Drone](https://www.aerialmediapros.com/store/images/product/d/dji-matrice-210-professional-industry-dual-camera-drone-syst-512px-512px.jpg) 
 
 ##### The Basic Working Model of the drone
 
