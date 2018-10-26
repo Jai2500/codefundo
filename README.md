@@ -73,11 +73,12 @@ def newLocation(oldLat, oldLong, oldAlt):
 		newDistance = random.random()*maxDev
 		newLat = newLatitude(oldLat,newDistance)
 
-		with open ("locations.txt", "w") as fwrite:
+		with open ("locations.txt", "a") as fwrite:
 			fwrite.write(str(newLat)+' '+str(oldLat)+' '+str(oldAlt)+' ')
 
 		oldLat = newLat
 		
+newLocation(baseLatitude,baseLongitude,baseAltitude)
   ```
 
 
